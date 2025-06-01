@@ -1,0 +1,40 @@
+{
+  "data": [
+    { "id": 1, "name": "অন্যান্য", "slug": "uncategorized", "count": 135 },
+    { "id": 6201, "name": "অন্যান্য খেলা", "slug": "others", "count": 0 },
+    { "id": 78, "name": "অর্থনীতি", "slug": "finance", "count": 63 },
+    { "id": 17, "name": "আন্তর্জাতিক", "slug": "international", "count": 1425 },
+    {
+      "id": 2514,
+      "name": "ইসলাম ও জীবন",
+      "slug": "islam-and-life",
+      "count": 234
+    },
+    {
+      "id": 6205,
+      "name": "ইসলামিক জীবনধারা",
+      "slug": "islamic-lifestyle",
+      "count": 35
+    },
+    {
+      "id": 6204,
+      "name": "ইসলামিক প্রশ্নোত্তর",
+      "slug": "islamic-qa",
+      "count": 1
+    },
+    {
+      "id": 6202,
+      "name": "ইসলামিক শিক্ষা",
+      "slug": "islamic-education",
+      "count": 9
+    },
+    {
+      "id": 6208,
+      "name": "উচ্চশিক্ষা",
+      "slug": "higher-education",
+      "count": 45
+    },
+    { "id": 13408, "name": "ক্যারিয়ার", "slug": "career", "count": 1 }
+  ],
+  "status": 200
+}
