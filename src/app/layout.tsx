@@ -93,7 +93,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div>
+          <div className="max-w-7xl mx-auto min-h-screen">
             <header className="sticky top-0 z-50">
               <Header />
             </header>
