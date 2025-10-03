@@ -9,9 +9,9 @@ export default function Hero() {
   const relatedPosts = Posts.slice(2, 10); 
 
   return (
-    <div className="w-full h-screen mx-auto font-bangla">
+    <div className="w-full h-screen max-h-[800px]  mx-auto font-bangla">
       {/* Desktop/Tablet Layout */}
-      <div className="flex flex-col lg:flex-row w-full h-screen lg:gap-4  rounded-xl">
+      <div className="flex flex-col lg:flex-row w-full h-screen lg:gap-4 max-h-[800px]  rounded-xl">
         {/* Left Column - Main Featured Article */}
         <div className="space-y-2 flex-1 lg:w-[60%] lg:border pb-1 border-[#9D9595] sm:rounded-xl p-2  ">
           <FeturedPostCard feturedPost={feturedPost} />
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         {/* Right Column - Article List (Desktop/Tablet only) */}
-        <div className=" lg:flex flex-col items-center justify-between lg:border border-[#9D9595] sm:rounded-xl px-2 overflow-y-auto h-screen  lg:w-[40%]">
+        <div className="flex flex-col items-center justify-between max-h-[800px] lg:border border-[#9D9595] sm:rounded-xl px-2 overflow-y-auto h-screen  lg:w-[40%]">
           {relatedPosts?.map((post, index) => (
             <ListCard key={index} article={post} />
           ))}
