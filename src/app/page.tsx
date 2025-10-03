@@ -5,7 +5,7 @@ import Related from "@/components/homepage/Related";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen mx-auto bg-background text-foreground">
       <main className="w-full mx-auto">
         <div className="flex flex-col sm:flex-row sm:px-5 border-b-2 mb-2 items-stretch overflow-hidden">
           {/* Main content */}
