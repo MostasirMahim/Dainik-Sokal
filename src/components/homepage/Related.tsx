@@ -8,8 +8,6 @@ export default function Related({ varriant = "column" }: { varriant: string }) {
   
 
   const politicsArticles = posts.data
-    .filter((post) => post.categories.some((cat) => cat.name === "রাজনীতি"))
-    .slice(1, 7);
   const latestArticles = posts.data
     .filter((post) => post.categories.some((cat) => cat.name === "সর্বশেষ"))
     .slice(0, 7);
@@ -25,7 +23,7 @@ export default function Related({ varriant = "column" }: { varriant: string }) {
   );
 
   return (
-    <div className={`w-full ${varriant === "row" ? "h-auto" : "h-screen"} flex flex-col border border-[#9D9595] rounded-xl p-2 shadow-sm font-bangla`}>
+    <div className={`w-full ${varriant === "row" ? "h-auto" : "h-screen"} max-h-[800px] flex flex-col border border-[#9D9595] rounded-xl p-2 shadow-sm font-bangla`}>
       {/* Tabs for categories - Sticky header */}
       <Tabs defaultValue="politics" className="w-full flex flex-col h-full">
         <div className={`${varriant === "row" ? "md:flex md:justify-between md:w-full md:px-5 md:items-center lg:flex-none lg:px-0" : ""} `}>
