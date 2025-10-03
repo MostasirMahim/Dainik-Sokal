@@ -8,8 +8,8 @@ export function ListCard({ article }: { article: any }) {
    const router = useRouter();
   
   return (
-    <div>
-      <div className="flex p-3  rounded transition-colors cursor-pointer" onClick={() => router.push(`/${article.categories[0].slug}/${article.slug}`)}>
+    <div className="w-full">
+      <div className="flex p-3 rounded transition-colors cursor-pointer" onClick={() => router.push(`/${article.categories[0].slug}/${article.slug}`)}>
         <div className="flex-1 space-y-1">
           <h3 className="font-medium text-sm leading-tight line-clamp-2">
             {article?.title}
@@ -75,7 +75,7 @@ export function FeturedPostCard({ feturedPost }: { feturedPost: any }) {
         {feturedPost?.title}
       </h1>
       <div
-        className="hidden sm:block line-clamp-3  font-medium text-base leading-relaxed"
+        className=" line-clamp-3  font-medium text-base leading-relaxed"
         dangerouslySetInnerHTML={{
           __html: (feturedPost?.excerpt || "সংবাদ লোড হচ্ছে...").replace(
             /<p>/g,
